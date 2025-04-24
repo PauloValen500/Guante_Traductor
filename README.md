@@ -6,15 +6,6 @@ Este proyecto consiste en el desarrollo de un guante inteligente capaz de traduc
 
 Facilitar la comunicación entre personas con discapacidad auditiva y el resto de la población, rompiendo barreras lingüísticas mediante un sistema accesible, portable y en tiempo real.
 
-## 🧩 Componentes principales
-
-- **ESP32**: Microcontrolador principal para el procesamiento de datos.
-- **Sensores flexibles (1 por dedo)**: Detectan el grado de flexión de cada dedo.
-- **Módulo de voz**: Reproduce en voz el texto interpretado (opcional).
-- **Pantalla OLED o salida serial**: Muestra el texto traducido.
-- **MQTT (opcional)**: Envío de datos en tiempo real para integración web o móvil.
-- **Firebase / Firestore (opcional)**: Almacenamiento de traducciones o análisis en la nube.
-- **IA (futuro)**: Mejora de la traducción con algoritmos de aprendizaje automático.
 
 ## ⚙️ Cómo funciona
 
