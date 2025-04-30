@@ -3,11 +3,11 @@ from time import sleep
 
 # Configuración por dedo: nombre, pin y umbrales de lectura
 config_dedos = {
-    "Gordo":    {"pin": 36, "no_doblado": 200, "doblado": 2000},
-    "Índice":   {"pin": 39, "no_doblado": 250, "doblado": 2100},
-    "Medio":    {"pin": 34, "no_doblado": 300, "doblado": 2150},
-    "Anular":   {"pin": 35, "no_doblado": 280, "doblado": 2200},
-    "Meñique":  {"pin": 32, "no_doblado": 230, "doblado": 2000}
+    "Gordo":    {"pin": 36, "no_doblado": 200, "doblado": 3900},
+    "Índice":   {"pin": 39, "no_doblado": 250, "doblado": 3900},
+    "Medio":    {"pin": 34, "no_doblado": 300, "doblado": 3900},
+    "Anular":   {"pin": 35, "no_doblado": 280, "doblado": 3900},
+    "Meñique":  {"pin": 32, "no_doblado": 230, "doblado": 3900}
 }
 
 # Crear objetos ADC y configurar resolución/atenuación
