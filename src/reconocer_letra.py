@@ -1,8 +1,40 @@
 from sensor_dedos import leer_dedos
 
-# Plantilla esperada para representar la letra "A"
+# Plantillas esperadas para representar las letras A, B, C, D y E
 plantilla_A = {
     "Gordo": "No doblado",
+    "Índice": "Completamente doblado",
+    "Medio": "Completamente doblado",
+    "Anular": "Completamente doblado",
+    "Meñique": "Completamente doblado"
+}
+
+plantilla_B = {
+    "Gordo": "Completamente doblado",
+    "Índice": "No doblado",
+    "Medio": "No doblado",
+    "Anular": "No doblado",
+    "Meñique": "No doblado"
+}
+
+plantilla_C = {
+    "Gordo": "Medianamente doblado",
+    "Índice": "Medianamente doblado",
+    "Medio": "Medianamente doblado",
+    "Anular": "Medianamente doblado",
+    "Meñique": "Medianamente doblado"
+}
+
+plantilla_D = {
+    "Gordo": "Completamente doblado",
+    "Índice": "No doblado",
+    "Medio": "Completamente doblado",
+    "Anular": "Completamente doblado",
+    "Meñique": "Completamente doblado"
+}
+
+plantilla_E = {
+    "Gordo": "Completamente doblado",
     "Índice": "Completamente doblado",
     "Medio": "Completamente doblado",
     "Anular": "Completamente doblado",
@@ -22,5 +54,13 @@ def reconocer_letra():
     
     if es_letra(plantilla_A, estados):
         return "A"
-    
+    if es_letra(plantilla_B, estados):
+        return "B"
+    if es_letra(plantilla_C, estados):
+        return "C"
+    if es_letra(plantilla_D, estados):
+        return "D"
+    if es_letra(plantilla_E, estados):
+        return "E"
+
     return None  # Si no coincide con ninguna letra
