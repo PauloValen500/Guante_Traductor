@@ -1,16 +1,22 @@
-from sensor_gyro import inicializar_gyroscopo, leer_gyro
-from reconocer_movimiento import reconocer_letra_por_movimiento
+from reconocer_letra import reconocer_letra
+from sensor_dedos import inicializar_sensores, leer_dedos
 from time import sleep
 
-gyro = inicializar_gyroscopo()
+
+# Inicializa los sensores flex
+inicializar_sensores()
 
 while True:
-    datos_gyro = leer_gyro(gyro)
-    letra_mov = reconocer_letra_por_movimiento(datos_gyro)
+    letra = reconocer_letra()
+    estados = leer_dedos()
+    
+    print("\nLecturas de sensores:")
+    for dedo, info in estados.items():
+        print(f"{dedo}: {info['estado']} (Lectura: {info['lectura']})")
 
-    if letra_mov:
-        print(f"Letra detectada por movimiento: {letra_mov}")
+    if letra:
+        print(f"Letra detectada: {letra}")
     else:
-        print("Sin movimiento reconocido")
+        print("Ninguna letra reconocida")
 
-    sleep(0.5)
+    sleep(2)
