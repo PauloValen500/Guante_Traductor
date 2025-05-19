@@ -3,11 +3,11 @@ from time import sleep
 
 # Configuración de pines y umbrales para cada dedo
 config_dedos = {
-    "Gordo":    {"pin": 36, "no_doblado": 200, "doblado": 2000},
-    "Índice":   {"pin": 39, "no_doblado": 250, "doblado": 1200},
-    "Medio":    {"pin": 34, "no_doblado": 300, "doblado": 600},
-    "Anular":   {"pin": 35, "no_doblado": 280, "doblado": 1200},
-    "Meñique":  {"pin": 32, "no_doblado": 230, "doblado": 2100}
+    "Gordo":    {"pin": 36, "no_doblado": 150, "doblado": 1100},
+    "Índice":   {"pin": 39, "no_doblado": 150, "doblado": 700},
+    "Medio":    {"pin": 34, "no_doblado": 400, "doblado": 1000},
+    "Anular":   {"pin": 35, "no_doblado": 580, "doblado": 1100},
+    "Meñique":  {"pin": 32, "no_doblado": 530, "doblado": 1100}
 }
 
 # Inicializar sensores

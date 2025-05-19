@@ -10,7 +10,7 @@ def filtrar_ruido(valor):
 
 def inicializar_gyroscopo():
     global offsets
-    i2c = I2C(0, scl=Pin(22), sda=Pin(21))
+    i2c = I2C(0, scl=Pin(14), sda=Pin(12))
     sensor = mpu6050.accel(i2c)
 
     # Calibrar con más muestras
